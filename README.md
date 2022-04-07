@@ -25,7 +25,7 @@ def function(param1: type, param2: type,...) -> type:
   """
   ...
 ```
-P.s. if you are supersmart, inherit all your classes from [dataclass](https://docs.python.org/3/library/dataclasses.html) and make some tests.
-Looking forward to your pull requests,
-with love,
+P.s. if you are supersmart, inherit all your classes from [dataclass](https://docs.python.org/3/library/dataclasses.html) and make some tests.\
+Looking forward to your pull requests,\
+with love,\
 Booba

@@ -12,7 +12,7 @@ The third specialist was super smart: he designed the whole pipeline (his metodo
 So, here you are!
 You task is:
 * `InterfaceC.py` is the file with the pipeline (you can actually rename files), dont change its structure but fill the methods with the necessary code -- you should demonstrate training, validation and testing performance to your boss.
-* `interfaceB.py` (change it to `torchvision` with the nitty-gritty transforms, your boss mignt want to see some weird and cringe ones)
+* `interfaceB.py` (change it to `torchvision` with the nitty-gritty transforms, your boss mignt want to see some weird and cringe ones) but yoy have to follow its pipeline (normalization is the key)
 * `interfaceA.py` -- your boss wants to look at the difference between FC and convolutional architectures, so make to learning classes (all the loop should incorporated in one class) and inherit it from a base class (maybe it will be smth different learning tasks afterwards)
 
 Please, add more comments and docstrings like

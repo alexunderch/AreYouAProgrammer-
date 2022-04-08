@@ -20,20 +20,31 @@ class InterfaceC(object):
         learner.hidden_dim = hidden_dim
         learner.learn(n_epochs=n_epochs, loader=train_loader)
     
-    def validate(self):
-        """Oops!"""
+    def validate(self, valid_set: torch.utils.data.TensorDataset) -> tuple:
+        """Oops! Should be implemented with a train loop
+           E.g. make a method `train_and_validate(train_set, valid_set)`
+        """
+        losses = []
+        return mean(losses), metrics
 
-    def test(self):
+    def test(self, test_set: torch.utils.data.TensorDataset) -> tuple:
         """Oops!"""
+        losses = []
+        return mean(losses), metrics
     
     def show_to_boss(self):
-        """Oops!"""
+        """Oops!
+            Samples an image from dataset and prints model's prediction and its confidence
+        """
 
 
 def main():
     interface = InterfaceC(batch_size=20)
-    interface.learn()
-
+    interface.learn(input_dim, hidden_dim, output_dim, n_epochs)
+    interface.show_to_boss()
+    
+    
+    interface.test(test_set)
     interface.show_to_boss()
 
 
